@@ -29,8 +29,8 @@ function CampusInput({ campus, setCampus, hide }) {
           onChange={handleChange}
           className={!hide ? styles.inputText : styles.inputTextNav}
         >
-          <MenuItem value={"chennai"}>VIT-Chennai</MenuItem>
           <MenuItem value={"vellore"}>VIT-Vellore</MenuItem>
+          <MenuItem value={"chennai"}>VIT-Chennai</MenuItem>
         </Select>
       </FormControl>
     </div>
