@@ -1,0 +1,22 @@
+.inputField {
+    width: 150px;
+    margin: 0px !important;
+    margin-left: 10px !important;
+    margin-top: -30px !important;
+  }
+  
+  .inputFieldNav {
+    width: 150px;
+    margin: 0px !important;
+    margin-left: 10px !important;
+    border-color: #fff !important;
+  }
+  
+  .inputText {
+    color: #000 !important;
+  }
+  
+  .inputTextNav {
+    color: #fff !important;
+  }
+  

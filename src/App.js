@@ -1,4 +1,10 @@
 import React, { Fragment } from "react";
+import Dialog from "@material-ui/core/Dialog";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogContentText from "@material-ui/core/DialogContentText";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import CampusInput from "./campusinput/campusinput";
+
 import {
   Button,
   Navbar,
@@ -13,12 +19,25 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 import { FaHeart } from "react-icons/fa";
 import {sheet1,sheet2} from "./data";
+import {sheet11,sheet22} from "./data-chennai.json";
 export default function App() {
   
+  const [campus, setCampus] = React.useState("");
+  const [open, setOpen] = React.useState(true);
+  // "homepage": "https://github.com/shwetanshutech/communityGroups#readme"
+  React.useEffect(() => {
+    if (campus) {
+      setOpen(false);
+    }
+  }, [campus]);
+  let s1,s2;
+  if(campus==="vellore"){ s1=sheet1; s2=sheet2;}
+  else{s1=sheet11;s2=sheet22;}
+
 return (
     <>
       <div class="body">
-        <Navbar bg="dark">
+        <Navbar bg="dark" >
           <Container>
             <Navbar.Brand href="https://www.vitrendz.com" target="_blank">
               <img
@@ -27,8 +46,26 @@ return (
                 alt="logo"
               />
             </Navbar.Brand>
+            {/* <CampusInput campus={campus} setCampus={setCampus} style={{color:'white'}}/> */}
           </Container>
         </Navbar>
+        <Dialog fullWidth={true} maxWidth={"sm"} open={open}>
+          <DialogTitle id="max-width-dialog-title">
+            Welcome to VITrendz Community Groups app!
+          </DialogTitle>
+          <DialogContent
+            style={{
+              display: "flex",
+              alignItems: "center",
+              padding: "25px",
+            }}
+          >
+            <DialogContentText>
+              Please select a campus before procedding :
+            </DialogContentText>
+            <CampusInput campus={campus} setCampus={setCampus} />
+          </DialogContent>
+        </Dialog>
         <Container Fluid>
           <div class="appBody">
             <br />
@@ -73,7 +110,7 @@ return (
                     </Row>
                   </Container>
                   <br />
-                  {sheet1.map((item, i) => (
+                  {s1.map((item, i) => (
                     <Fragment key={i}>
                       <Container Fluid>
                         <Row>
@@ -126,7 +163,7 @@ return (
                     </Row>
                   </Container>
                   <br />
-                  {sheet2.map((item, j) => {
+                  {s2.map((item, j) => {
                     return item.gnamet === "" ? null : (
                       <Fragment key={j}>
                         <Container Fluid>

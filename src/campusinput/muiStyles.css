@@ -1,0 +1,10 @@
+.MuiOutlinedInput-root,
+.MuiOutlinedInput-root:before,
+.MuiOutlinedInput-root:after,
+.Mui-focused {
+  border: 1px solid #fff !important;
+}
+
+.MuiSvgIcon-root {
+  fill: #fff !important;
+}
