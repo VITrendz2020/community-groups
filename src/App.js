@@ -62,7 +62,7 @@ return (
             }}
           >
             <DialogContentText>
-              Please select a campus before procedding :
+              Please select a campus before proceeding :
             </DialogContentText>
             <CampusInput campus={campus} setCampus={setCampus} />
           </DialogContent>
