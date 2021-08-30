@@ -180,8 +180,7 @@ return (
                   </section>
                 </div>
               </div>
-
-              <div
+         <div
                 class="modal fade"
                 id="modal-error"
                 tabindex="-1"
