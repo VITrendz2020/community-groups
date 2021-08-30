@@ -31,8 +31,9 @@ export default function App() {
     }
   }, [campus]);
   let s1,s2;
-  if(campus==="vellore"){ s1=sheet1; s2=sheet2;}
-  else{s1=sheet11;s2=sheet22;}
+  let link1;
+  if(campus==="vellore"){ s1=sheet1; s2=sheet2; link1="https://www.instagram.com/vitrendz/"}
+  else{s1=sheet11;s2=sheet22;link1="https://www.instagram.com/vitrendz_chennai/"}
 
 return (
     <>
@@ -196,7 +197,7 @@ return (
                   })}
                   <section>
                     <a
-                      href="https://www.instagram.com/vitrendz"
+                      href={link1}
                       target="_blank"
                       rel="noreferrer"
                     >
