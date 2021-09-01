@@ -1,14 +1,20 @@
 ﻿{ "sheet1" : [
+    {
+        "Group Name": "Freshers Doubts 3",
+        "Group Link": "https://chat.whatsapp.com/JQSeOXJpiDqG607pu1qD2A",
+        "SPAMMING": "No spam allowed"
+    },
+    {
+        "Group Name": "Freshers Doubts 2",
+        "Group Link": "https://bit.ly/3wE74py",
+        "SPAMMING": "No spam allowed"
+    },
         {
             "Group Name": "Freshers Doubts 1",
             "Group Link": "https://bit.ly/3wvEaaL",
             "SPAMMING": "No spam allowed"
         },
-        {
-            "Group Name": "Freshers Doubts 2",
-            "Group Link": "https://bit.ly/3wE74py",
-            "SPAMMING": "No spam allowed"
-        },
+       
         {
             "Group Name": "VIT Freshers CSE 1",
             "Group Link": "https://bit.ly/3k5CPoF",
@@ -17,6 +23,11 @@
         {
             "Group Name": "VIT Freshers CSE 2",
             "Group Link": "https://bit.ly/3xLv9Mx",
+            "SPAMMING": "No spam allowed"
+        },
+        {
+            "Group Name": "VIT Freshers CSE 3",
+            "Group Link": "https://chat.whatsapp.com/Gc80lyEkpgS6n6OOk1kFwk",
             "SPAMMING": "No spam allowed"
         },
         {
