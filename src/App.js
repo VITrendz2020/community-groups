@@ -78,7 +78,7 @@ return (
                 <Alert class="alert alert-warning" role="alert">
                   <div id="grades">
                     Welcome! <strong> VITrendz Community </strong>[ Use Ctrl+F
-                    or Find for easy Navigation! ].Both Whatsapp and Telegram
+                    or Find for easy Navigation! ]. Both Whatsapp and Telegram
                   </div>
                 </Alert>
               </Col>
